@@ -39,7 +39,7 @@ Throughout this bootcamp, I aim to:
 ### Week 2 🚧
 
 - [x] Day 1 – Python Development Workflow & Code Quality
-- [ ] Day 2
+- [x] Day 2 - Variables, Data Types, Indentation, and Basic Python Programming
 - [ ] Day 3
 - [ ] Day 4
 - [ ] Day 5
