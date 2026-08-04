@@ -40,13 +40,13 @@ Expressions combine values, variables, operators, and functions to produce a sin
 
 Practiced using:
 
-- +
-- -
-- *
-- /
-- //
-- %
-- **
+- `+`
+- `-`
+- `*`
+- `/`
+- `//`
+- `%`
+- `**`
 
 to perform mathematical operations.
 
