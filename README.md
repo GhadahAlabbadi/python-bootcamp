@@ -50,7 +50,7 @@ Throughout this bootcamp, I aim to:
 
 ## 📂 Repository Structure
 ```text
-Python-Bootcamp/
+python-bootcamp/
 │
 ├── README.md
 │
