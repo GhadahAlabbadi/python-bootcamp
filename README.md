@@ -28,52 +28,84 @@ Throughout this bootcamp, I aim to:
 
 ## 📅 Progress
 
-### Week 1 ✅ Completed
+### ✅ Week 1 — Completed
 
-- [x] Day 1 – Introduction to Python, Git & GitHub
-- [x] Day 2 – CLI & Git Basics
-- [x] Day 3 – PowerShell Automation & Virtual Environments
-- [x] Day 4 – GitHub Workflow & Collaboration
-- [x] Day 5 – PowerShell Scripting & Advanced Git
+- [x] Day 1 – Introduction to Python, Git, and GitHub
+- [x] Day 2 – CLI Fundamentals and Git Basics
+- [x] Day 3 – PowerShell Automation and Virtual Environments
+- [x] Day 4 – GitHub Workflow and Collaboration
+- [x] Day 5 – Advanced Git and PowerShell Scripting
 
-### Week 2 🚧
+### ✅ Week 2 — Completed
 
-- [x] Day 1 – Python Development Workflow & Code Quality
-- [x] Day 2 - Variables, Data Types, Indentation, and Basic Python Programming
-- [ ] Day 3
-- [ ] Day 4
-- [ ] Day 5
+- [x] Day 1 – Python Development Workflow, Linters, and Virtual Environments
+- [x] Day 2 – Variables, Data Types, and Basic Python Concepts
+- [x] Day 3 – Expressions, Operators, Strings, and Object Identity
+- [x] Day 4 – Conditional Statements and Input Validation
+- [x] Day 5 – Loops and Iteration
 
-> This section will be updated as the bootcamp progresses.
+> This repository will continue to be updated throughout the bootcamp.
 
 ---
 
 ## 📂 Repository Structure
-week-1/
-│── day-1/
-│── day-2/
-│── day-3/
-│── day-4/
-│── day-5/
-
-week-2/
-│── day-1/
+```text
+Python-Bootcamp/
+│
+├── README.md
+│
+├── week-1
+│   ├── day-1
+│   ├── day-2
+│   ├── day-3
+│   ├── day-4
+│   └── day-5
+│
+└── week-2
+    ├── day-1
+    ├── day-2
+    ├── day-3
+    ├── day-4
+    └── day-5
+```
 
 Each day may include:
 
-- README.md – Daily learning summary
-- lab/ – Lab files (if available)
-- screenshots/ – Screenshots (if available)
+- **README.md** – Daily learning summary.
+- **lab/** – Practical lab files (when available).
+- **screenshots/** – Supporting screenshots (when available).
 
 ---
 
 ## 💻 Projects
 
-Projects developed during the bootcamp are maintained in their own repositories.
-
 ### Unit 1 Project
 
-🔗 https://github.com/GhadahAlabbadi/project-unit1
+The first project developed during the bootcamp is maintained in a separate repository.
+
+🔗 Project Repository:  
+https://github.com/GhadahAlabbadi/project-unit1
+
+---
+
+## 🛠️ Topics Covered
+
+- Command Line Interface (CLI)
+- Git & GitHub
+- PowerShell Scripting
+- Python Fundamentals
+- Variables and Data Types
+- Expressions and Operators
+- Conditional Statements
+- Loops and Iteration
+- String Manipulation
+- Input Validation
+- Object Identity
+- Virtual Environments
+- Python Development Workflow
+- Linters (Ruff, Pylint, Flake8)
+
+> More topics will be added as the bootcamp progresses.
 
 ---
 
@@ -82,9 +114,10 @@ Projects developed during the bootcamp are maintained in their own repositories.
 This repository is used to:
 
 - Document my daily learning progress.
-- Organize notes and summaries.
-- Store lab work and learning resources.
-- Track my progress throughout the bootcamp.
+- Organize notes and daily summaries.
+- Store practical lab work.
+- Track projects completed during the bootcamp.
+- Build a structured learning portfolio.
 
 ---
 
