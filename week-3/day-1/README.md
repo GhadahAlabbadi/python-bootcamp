@@ -61,7 +61,7 @@ __doc__
 and the common execution check:
 ```python
 if __name__ == "__main__":
-``` ...
+```
 
 ### Parameters
 
