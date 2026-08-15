@@ -1,72 +1,72 @@
-# numbers = range(1_000_000)
-# total = sum(number ** 2
-#             for number in numbers)
-# print(total) #333332833333500000
+numbers = range(1_000_000)
+total = sum(number ** 2
+            for number in numbers)
+print(total) #333332833333500000
 
-# items = ["Python", "Git"]
-# items.append("Django")
-# name = "sara"
-# name = name.title()
-# print(items) #['Python', 'Git', 'Django']
-# print(name) #Sara
+items = ["Python", "Git"]
+items.append("Django")
+name = "sara"
+name = name.title()
+print(items) #['Python', 'Git', 'Django']
+print(name) #Sara
 
-# original = ["Python", "Git"]
-# alias = original
-# alias.append("Django")
-# print(original) #['Python', 'Git', 'Django']
-# print(alias) #['Python', 'Git', 'Django']
-# print(original is alias) #True
+original = ["Python", "Git"]
+alias = original
+alias.append("Django")
+print(original) #['Python', 'Git', 'Django']
+print(alias) #['Python', 'Git', 'Django']
+print(original is alias) #True
 
-# original = ["Python", "Git"]
-# clone = original.copy()
-# clone.append("Django")
-# print(original) #['Python', 'Git']
-# print(clone) #['Python', 'Git', 'Django']
-# print(original is clone) #False
+original = ["Python", "Git"]
+clone = original.copy()
+clone.append("Django")
+print(original) #['Python', 'Git']
+print(clone) #['Python', 'Git', 'Django']
+print(original is clone) #False
 
-# original = [["Sara",90], ["omar", 85]]
-# clone = original.copy()
-# clone[0][1] = 95
-# print(original) #[['Sara', 95], ['omar', 85]]
-# print(clone) #[['Sara', 95], ['omar', 85]]
-# print(original[0] is clone[0]) #True
+original = [["Sara",90], ["omar", 85]]
+clone = original.copy()
+clone[0][1] = 95
+print(original) #[['Sara', 95], ['omar', 85]]
+print(clone) #[['Sara', 95], ['omar', 85]]
+print(original[0] is clone[0]) #True
 
-# from copy import deepcopy
-# original = [["Sara",90], ["omar", 85]]
-# clone = deepcopy(original)
-# clone[0][1] = 95
-# print(original) #[['Sara', 90], ['omar', 85]]
-# print(clone) #[['Sara', 95], ['omar', 85]]
-# print(original[0] is clone[0]) #False
+from copy import deepcopy
+original = [["Sara",90], ["omar", 85]]
+clone = deepcopy(original)
+clone[0][1] = 95
+print(original) #[['Sara', 90], ['omar', 85]]
+print(clone) #[['Sara', 95], ['omar', 85]]
+print(original[0] is clone[0]) #False
 
-# names = ["Sara", "Omar", "Lina"]
-# # Search items one by one : O(n)
-# print("Lina" in names)
-# name_set = set(names)
-# # Average membership lookup: O(1)
-# print("Lina" in name_set)
+names = ["Sara", "Omar", "Lina"]
+# Search items one by one : O(n)
+print("Lina" in names)
+name_set = set(names)
+# Average membership lookup: O(1)
+print("Lina" in name_set)
 
-# students = [{"id":101, "name":"Sara"}, {"id":102, "name":"Omar"}]
-# students_by_id = {student["id"]: student
-#                   for student in students}
-# print(students_by_id[102]["name"])
+students = [{"id":101, "name":"Sara"}, {"id":102, "name":"Omar"}]
+students_by_id = {student["id"]: student
+                  for student in students}
+print(students_by_id[102]["name"])
 
-# #!IMPORTANT PRACTICE !!!
-# students = [{"name":"ghadah", "scores":[99,98,100]}, 
-#             {"name":"majd", "scores":[100,98,100]},
-#             {"name":"omar", "scores":[20,30,40]}]
-# list_of_scores = [sum(student["scores"])/len(student["scores"])
-#                  for student in students]
-# print(list_of_scores)
-# record = {student["name"]: avg
-#           for student in students
-#           for avg in list_of_scores
-#           if avg >= 60}
-# print(record)
-# from copy import deepcopy
-# deepCopy_dict = deepcopy(record)
-# deepCopy_dict["shahad"] = 99
-# print(deepCopy_dict)
+#!IMPORTANT PRACTICE !!!
+students = [{"name":"ghadah", "scores":[99,98,100]}, 
+            {"name":"majd", "scores":[100,98,100]},
+            {"name":"omar", "scores":[20,30,40]}]
+list_of_scores = [sum(student["scores"])/len(student["scores"])
+                 for student in students]
+print(list_of_scores)
+record = {student["name"]: avg
+          for student in students
+          for avg in list_of_scores
+          if avg >= 60}
+print(record)
+from copy import deepcopy
+deepCopy_dict = deepcopy(record)
+deepCopy_dict["shahad"] = 99
+print(deepCopy_dict)
 
 #LAB 1
 numbers = [1, 2, 3, 4, 5]
