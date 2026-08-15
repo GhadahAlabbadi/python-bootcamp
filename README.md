@@ -1,12 +1,12 @@
 # 🐍 Python Bootcamp Portfolio
 
-This repository documents my learning journey throughout the Python Bootcamp offered by Tuwaiq Academy.
+This repository documents my learning journey throughout the **Python Bootcamp** offered by **Tuwaiq Academy**.
 
 ---
 
 ## 📖 Course Description
 
-The Python Bootcamp, offered by Tuwaiq Academy, focuses on developing programming and problem-solving skills through practical projects. The bootcamp covers Python programming, web development using the Django framework, and guides trainees through the process of building real-world web applications.
+The Python Bootcamp, offered by **Tuwaiq Academy**, focuses on developing programming and problem-solving skills through practical projects. The bootcamp covers Python programming, web development using the Django framework, and guides trainees through the process of building real-world web applications.
 
 ---
 
@@ -44,36 +44,52 @@ Throughout this bootcamp, I aim to:
 - [x] Day 4 – Conditional Statements and Input Validation
 - [x] Day 5 – Loops and Iteration
 
+### ✅ Week 3 — Completed
+
+- [x] Day 1 – Functions, Parameters, and Return Values
+- [x] Day 2 – Namespaces, Scope, Modules, and Imports
+- [x] Day 3 – Python Collections and Data Structures
+- [x] Day 4 – Comprehensions and Python Fundamentals Review
+- [x] Day 5 – Intermediate Python, Copying, and Collection Performance
+
 > This repository will continue to be updated throughout the bootcamp.
 
 ---
 
 ## 📂 Repository Structure
+
 ```text
-python-bootcamp/
+Python-Bootcamp/
 │
 ├── README.md
 │
-├── week-1
-│   ├── day-1
-│   ├── day-2
-│   ├── day-3
-│   ├── day-4
-│   └── day-5
+├── week-1/
+│   ├── day-1/
+│   ├── day-2/
+│   ├── day-3/
+│   ├── day-4/
+│   └── day-5/
 │
-└── week-2
-    ├── day-1
-    ├── day-2
-    ├── day-3
-    ├── day-4
-    └── day-5
+├── week-2/
+│   ├── day-1/
+│   ├── day-2/
+│   ├── day-3/
+│   ├── day-4/
+│   └── day-5/
+│
+└── week-3/
+    ├── day-1/
+    ├── day-2/
+    ├── day-3/
+    ├── day-4/
+    └── day-5/
 ```
 
 Each day may include:
 
 - **README.md** – Daily learning summary.
-- **lab/** – Practical lab files (when available).
-- **screenshots/** – Supporting screenshots (when available).
+- **lab/** – Practical lab files when available.
+- **screenshots/** – Supporting screenshots when available.
 
 ---
 
@@ -83,7 +99,7 @@ Each day may include:
 
 The first project developed during the bootcamp is maintained in a separate repository.
 
-🔗 Project Repository:  
+🔗 **Project Repository:**  
 https://github.com/GhadahAlabbadi/project-unit1
 
 ---
@@ -93,17 +109,24 @@ https://github.com/GhadahAlabbadi/project-unit1
 - Command Line Interface (CLI)
 - Git & GitHub
 - PowerShell Scripting
+- Virtual Environments
+- Python Development Workflow
+- Linters and Code Quality
 - Python Fundamentals
 - Variables and Data Types
 - Expressions and Operators
 - Conditional Statements
 - Loops and Iteration
-- String Manipulation
-- Input Validation
-- Object Identity
-- Virtual Environments
-- Python Development Workflow
-- Linters (Ruff, Pylint, Flake8)
+- Functions and Parameters
+- Namespaces and Scope
+- Modules and Imports
+- Lists, Tuples, Sets, and Dictionaries
+- Nested Collections
+- Comprehensions
+- Generator Expressions
+- Mutable and Immutable Objects
+- Aliasing, Shallow Copy, and Deep Copy
+- Collection Performance and Basic Big O Concepts
 
 > More topics will be added as the bootcamp progresses.
 
@@ -123,4 +146,4 @@ This repository is used to:
 
 ## 📄 License
 
-This repository is licensed under the MIT License.
+This repository is licensed under the **MIT License**.
