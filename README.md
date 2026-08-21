@@ -52,6 +52,14 @@ Throughout this bootcamp, I aim to:
 - [x] Day 4 – Comprehensions and Python Fundamentals Review
 - [x] Day 5 – Intermediate Python, Copying, and Collection Performance
 
+### ✅ Week 4 — Completed
+
+- [x] Day 1 – Object-Oriented Programming Fundamentals
+- [x] Day 2 – File Handling – Part 1
+- [x] Day 3 – CSV, JSON, and Exception Management
+- [x] Day 4 – OOP Practice, Properties, and Inheritance
+- [x] Day 5 – UML Diagrams and Unit 2 Project Introduction
+
 > This repository will continue to be updated throughout the bootcamp.
 
 ---
@@ -77,7 +85,14 @@ Python-Bootcamp/
 │   ├── day-4/
 │   └── day-5/
 │
-└── week-3/
+├── week-3/
+│   ├── day-1/
+│   ├── day-2/
+│   ├── day-3/
+│   ├── day-4/
+│   └── day-5/
+│
+└── week-4/
     ├── day-1/
     ├── day-2/
     ├── day-3/
@@ -101,6 +116,12 @@ The first project developed during the bootcamp is maintained in a separate repo
 
 🔗 **Project Repository:**  
 https://github.com/GhadahAlabbadi/project-unit1
+
+### Unit 2 Project
+
+The second project applies concepts learned throughout the unit, including object-oriented programming, file handling, exception management, and system modeling.
+
+> The Unit 2 Project repository will be added once completed.
 
 ---
 
@@ -127,6 +148,17 @@ https://github.com/GhadahAlabbadi/project-unit1
 - Mutable and Immutable Objects
 - Aliasing, Shallow Copy, and Deep Copy
 - Collection Performance and Basic Big O Concepts
+- Object-Oriented Programming
+- Classes and Objects
+- Properties and Setters
+- Inheritance and `super()`
+- File Handling and `pathlib`
+- CSV and JSON
+- Exception Handling
+- Custom Exceptions
+- UML Use Case Diagrams
+- UML Activity Diagrams
+- UML Class Diagrams
 
 > More topics will be added as the bootcamp progresses.
 
