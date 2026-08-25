@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Course Registration</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Course Registration</h1><br>
+        </header>
+        <main>
+            <section>
+                <h2>About the Program</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQko4w8jGNbhS27r2J7kvYF-nZwTW8q3mYZwIv5Hy9KgQ&s=10" alt="Tuwaiq Academy Logo" style="height: 100px;">
+                <p>
+                We are Tuwaiq Academy, and we offer many courses in technology and
+                programming. Our goal is to help students learn new skills and improve
+                their technical knowledge. Some of our courses include Python, HTML,
+                and CSS. These courses help students learn programming and web development.
+                </p><br>
+            </section>
+            <section>
+                <h2>Available Courses</h2>
+                <table>
+                    <caption>Available Courses</caption>
+                    <tr>
+                        <th>Course logo</th>
+                        <th>Course Name</th>
+                        <th>Start Date</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td><img src="pythonLogo.jpg" alt="Python Logo" width="70px" height="50px"></td>
+                        <td>Python</td>
+                        <td>January 18</td>
+                        <td>3 months</td>
+                        <td>1000 SAR</td>
+                    </tr>
+                    <tr>
+                        <td><img src="HTMLlogo.png" alt="HTML Logo" width="70px" height="50px"></td>
+                        <td>HTML</td>
+                        <td>February 15</td>
+                        <td>1 month</td>
+                        <td>250 SAR</td>
+                    </tr>
+                    <tr>
+                        <td><img src="cssLogo.png" alt="CSS Logo" width="80px" height="50px"></td>
+                        <td>CSS</td>
+                        <td>May 13</td>
+                        <td>1 month</td>
+                        <td>250 SAR</td>
+                    </tr>
+                </table><br>
+            </section>
+            <section>
+                <h2>Registeration Form</h2>
+                <form action="contact/" method="post">
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" required>
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                        <br>
+                        <label for="birthday">Date of Birth</label>
+                        <input type="date" id="birthday" name="birthday">
+                        <br>
+                        <input type="radio" name="gender" required>male
+                        <input type="radio" name="gender" required>female
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Course Info</legend>
+                        <label for="courses">Select your course: </label>
+                        <select>
+                        <option>Python</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        </select>
+                        <br>
+                        <label for="agreement">Are you agree to private policy? </label>
+                        <input type="checkbox" checked required>Agree
+                        <br><button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Training Academy</p>
+            <p>Ghadah Alabbadi, Majd Alharbi, Shahad Alneghemishi</p>
+        </footer>
+    </body>
+</html>
+

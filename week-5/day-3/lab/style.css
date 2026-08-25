@@ -1,0 +1,277 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #f3f7ff, #eefcf9);
+    color: #1f2937;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: linear-gradient(135deg, #5b4bdb, #00a6a6);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    width: 88%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #5b4bdb;
+}
+
+section:nth-of-type(2) {
+    border-left-color: #00a6a6;
+}
+
+section:nth-of-type(3) {
+    border-left-color: #ff9f43;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #4537c4;
+    font-size: 1.7rem;
+}
+
+section p {
+    line-height: 1.8;
+}
+
+/* =========================
+   ABOUT IMAGE
+========================= */
+
+section:first-of-type img {
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    padding: 12px;
+    background-color: #f8f8ff;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(91, 75, 219, 0.15);
+}
+
+/* =========================
+   TABLE
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #5b4bdb;
+}
+
+th {
+    background: linear-gradient(135deg, #5b4bdb, #7567e8);
+    color: white;
+    padding: 14px;
+}
+
+td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9ff;
+}
+
+tr:hover {
+    background-color: #eefcf9;
+}
+
+table img {
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 2px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+    background-color: #fafbff;
+}
+
+legend {
+    font-weight: bold;
+    color: #5b4bdb;
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+
+label {
+    display: inline-block;
+    width: 210px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+input,
+select {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 270px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #5b4bdb;
+    box-shadow: 0 0 0 3px rgba(91, 75, 219, 0.15);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #5b4bdb;
+    margin-right: 6px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    background: linear-gradient(135deg, #5b4bdb, #00a6a6);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 5px 14px rgba(91, 75, 219, 0.25);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(91, 75, 219, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: linear-gradient(135deg, #4537c4, #008d8d);
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 750px) {
+    main {
+        width: 94%;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    label {
+        display: block;
+        width: auto;
+        margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+        width: 100%;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
