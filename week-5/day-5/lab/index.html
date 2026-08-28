@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Courses</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav><br>
+    </header>
+    <div class="intro">
+        <h2 class="hero-title">Tuwaiq Academy</h2>
+        <img src="tuwaiqLogo.png" alt="logo" width="150px" height="60px">
+        <p>Tuwaiq Academy is an educational institution in the Kingdom of Saudi Arabia focused on providing advanced programs in technology and programming, affiliated with the Saudi Federation for Cybersecurity, Programming, and Drones. The academy was launched in 2019 and is based at Princess Nourah Bint Abdulrahman University in the capital Riyadh.</p>
+    </div>
+    <form action="/contact" method="POST">
+        <fieldset>
+            <legend>USER INFORMATIONS</legend>
+            <section>
+                <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="First name..." required><br>
+                <br><label for="email">Email:</label>
+                <input type="email" name="email" placeholder="xxxx@xxxz.xxx" required><br><br>
+            </section>
+            <section>
+                <label for="select">Select course from list:</label>
+                <select name="courses" id="courses">
+                    <option>Python</option>
+                    <option>Java</option>
+                    <option>SQL</option>
+                </select><br><br>
+                <label for="checkbox">Do you agree?</label>
+                <input type="checkbox" name="checkbox" checked>OK
+                <input type="checkbox" name="checkbox">Agree
+            </section>
+            <section>
+                <label for="comments">Comments:</label>
+                <br><textarea name="comments" placeholder="Write your comments..."></textarea><br>
+                <button type="submit">Send</button>
+            </section>
+        </fieldset>
+    </form>
+    <div class="features-grid">
+        <section>
+            <h2>python course</h2>
+            <p>step-By-Step Tutorials — Learn python like a pro in this complete bootcamp taught by expert instructors. Be able to use Python for Data Science and Machine Learning. Sign up now! Watch In-Demand Courses. Start Learning Today. Learn in 75 Languages. Join 69M+ Learners. 210,000+ Online Courses. Improve Your Skills</p>
+            <img src="pythonLogo.jpg" alt="python" width="70px" class="logo">
+        </section>
+        <section>
+            <h2>html course</h2>
+            <p>this HTML course for web developers provides a solid overview for developers, from novice to expert level HTML</p>
+            <img src="HTMLlogo.png" alt="html" width="70px" class="logo">
+        </section>
+        <section>
+            <h2>css course</h2>
+            <p>our CSS online training courses from LinkedIn Learning (formerly Lynda.com) provide you with the skills you need, from the fundamentals to advanced tips</p>
+            <img src="cssLogo.png" alt="css" width="130px" class="logo">
+        </section>
+    </div>
+</body>
+
+</html>

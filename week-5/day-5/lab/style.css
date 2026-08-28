@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(158, 204, 233);
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: rgb(220, 242, 248);
+}
+
+body > div > div{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+@keyframes fadeIn{
+    0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes left-to-right{
+    0%{
+      transform: translateX(0);  
+    }
+    50%{
+       transform: translateX(60px); 
+    }
+    100%{
+        transform: translateX(-60px);
+    }
+}
+
+@keyframes slideIn{
+    0% { 
+        opacity: 0; 
+        transform: translateX(-40px); 
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title{
+    animation: slideIn .9s ease-out forwards;
+}
+
+.logo{
+    animation: left-to-right .8s linear;
+}
+
+button{
+    background: var(--main-color);
+    /* transition: background-color .3s ease, transform .3s ease; */
+    transition: transform .25s ease, background .25s ease;
+}
+
+button:hover, button:focus{
+    transform: translateX(20px);
+    background: var(--accent-color);
+}
+
+form {
+    padding: 2rem;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.features-grid section {
+    background-color:  rgb(220, 242, 248);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.intro{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(220, 242, 248);
+    animation: fadeIn 1s ease .25s forwards;
+}
+
+@media (max-width: 900px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    fieldset {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    nav, .intro{
+        flex-direction: column;
+    }
+
+    body > div > div{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    fieldset {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
