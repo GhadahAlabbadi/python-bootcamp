@@ -1,12 +1,14 @@
 # 🐍 Python Bootcamp Portfolio
 
-This repository documents my learning journey throughout the **Python Bootcamp** offered by **Tuwaiq Academy**.
+This repository documents my learning journey throughout the **Web Application Development Using Python Bootcamp** offered by **Tuwaiq Academy**.
 
 ---
 
 ## 📖 Course Description
 
-The Python Bootcamp, offered by **Tuwaiq Academy**, focuses on developing programming and problem-solving skills through practical projects. The bootcamp covers Python programming, web development using the Django framework, and guides trainees through the process of building real-world web applications.
+The bootcamp focuses on developing programming, problem-solving, and web development skills through hands-on learning and practical projects.
+
+The program covers Python programming, software development fundamentals, web technologies, responsive web design, and web application development using the **Django framework**. It also guides trainees through building real-world applications and completing practical projects throughout the program.
 
 ---
 
@@ -17,7 +19,12 @@ Throughout this bootcamp, I aim to:
 - Learn Command Line Interface (CLI) fundamentals.
 - Master Git and GitHub for version control and collaboration.
 - Develop strong Python programming skills.
+- Apply object-oriented programming concepts.
+- Work with files, JSON, CSV, and exception handling.
 - Understand web fundamentals and how the Internet works.
+- Build responsive interfaces using HTML and CSS.
+- Use Flexbox and CSS Grid for modern layouts.
+- Apply transitions and animations to web interfaces.
 - Build web applications using Django.
 - Work with databases using Django ORM.
 - Implement user authentication and authorization.
@@ -60,6 +67,14 @@ Throughout this bootcamp, I aim to:
 - [x] Day 4 – OOP Practice, Properties, and Inheritance
 - [x] Day 5 – UML Diagrams and Unit 2 Project Introduction
 
+### ✅ Week 5 — Completed
+
+- [x] Day 1 – Networking and Web Fundamentals
+- [x] Day 2 – HTTP and HTML Fundamentals
+- [x] Day 3 – Intermediate HTML and CSS
+- [x] Day 4 – Responsive Design with Flexbox, Grid, and Media Queries
+- [x] Day 5 – CSS Transitions, Transforms, Animations, and UI Libraries
+
 > This repository will continue to be updated throughout the bootcamp.
 
 ---
@@ -92,7 +107,14 @@ Python-Bootcamp/
 │   ├── day-4/
 │   └── day-5/
 │
-└── week-4/
+├── week-4/
+│   ├── day-1/
+│   ├── day-2/
+│   ├── day-3/
+│   ├── day-4/
+│   └── day-5/
+│
+└── week-5/
     ├── day-1/
     ├── day-2/
     ├── day-3/
@@ -119,13 +141,44 @@ https://github.com/GhadahAlabbadi/project-unit1
 
 ### Unit 2 Project
 
-The second project applies concepts learned throughout the unit, including object-oriented programming, file handling, exception management, and system modeling.
+A Python-based **School Management System** developed to apply concepts including:
 
-> The Unit 2 Project repository will be added once completed.
+- Object-Oriented Programming
+- File handling
+- JSON data persistence
+- Input validation
+- Exception handling
+- Logging
+- UML diagrams
+
+The project is maintained in a separate private repository.
+
+### Unit 3 Project — SkyRoute Travel
+
+A responsive travel website developed using **HTML5 and CSS3**.
+
+The project includes:
+
+- Semantic HTML
+- Responsive navigation
+- Hero section
+- Services and destination sections
+- About section
+- Booking form
+- Contact form
+- Flexbox and CSS Grid
+- Media queries
+- CSS variables
+- Transitions and keyframe animations
+- Responsive layouts for desktop, tablet, and mobile
+
+The project is maintained in a separate private repository.
 
 ---
 
 ## 🛠️ Topics Covered
+
+### Development Tools
 
 - Command Line Interface (CLI)
 - Git & GitHub
@@ -133,7 +186,9 @@ The second project applies concepts learned throughout the unit, including objec
 - Virtual Environments
 - Python Development Workflow
 - Linters and Code Quality
-- Python Fundamentals
+
+### Python Fundamentals
+
 - Variables and Data Types
 - Expressions and Operators
 - Conditional Statements
@@ -141,24 +196,78 @@ The second project applies concepts learned throughout the unit, including objec
 - Functions and Parameters
 - Namespaces and Scope
 - Modules and Imports
-- Lists, Tuples, Sets, and Dictionaries
+
+### Python Data Structures
+
+- Lists
+- Tuples
+- Sets
+- Dictionaries
 - Nested Collections
 - Comprehensions
 - Generator Expressions
 - Mutable and Immutable Objects
-- Aliasing, Shallow Copy, and Deep Copy
-- Collection Performance and Basic Big O Concepts
-- Object-Oriented Programming
+- Aliasing
+- Shallow Copy and Deep Copy
+- Collection Performance
+- Basic Big O Concepts
+
+### Object-Oriented Programming
+
 - Classes and Objects
 - Properties and Setters
-- Inheritance and `super()`
-- File Handling and `pathlib`
-- CSV and JSON
+- Inheritance
+- `super()`
+- Object Relationships
+
+### Files and Error Handling
+
+- File Handling
+- `pathlib`
+- CSV
+- JSON
 - Exception Handling
 - Custom Exceptions
+- Logging
+
+### System Modeling
+
 - UML Use Case Diagrams
 - UML Activity Diagrams
 - UML Class Diagrams
+
+### Web Development
+
+- Networking Fundamentals
+- Internet and Web Fundamentals
+- HTTP
+- HTML5
+- Semantic HTML
+- Forms
+- CSS3
+- CSS Selectors
+- Box Model
+- Flexbox
+- CSS Grid
+- Responsive Web Design
+- Media Queries
+- Relative Units
+- `minmax()`
+- CSS Variables
+- Pseudo-elements
+- Transitions
+- Transforms
+- Keyframe Animations
+
+### Upcoming Topics
+
+- Django
+- Django Models
+- Django ORM
+- Databases
+- Authentication and Authorization
+- Full Web Application Development
+- Capstone Project
 
 > More topics will be added as the bootcamp progresses.
 
@@ -169,13 +278,18 @@ The second project applies concepts learned throughout the unit, including objec
 This repository is used to:
 
 - Document my daily learning progress.
-- Organize notes and daily summaries.
+- Organize technical notes and summaries.
 - Store practical lab work.
 - Track projects completed during the bootcamp.
-- Build a structured learning portfolio.
+- Practice Git and GitHub workflows.
+- Build a structured portfolio of my development journey.
 
 ---
 
 ## 📄 License
 
 This repository is licensed under the **MIT License**.
+
+---
+
+**Status:** 🚀 In Progress
