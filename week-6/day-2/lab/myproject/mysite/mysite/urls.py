@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from core.views import homepage, about, contact
-from pages.urls import index
+# from pages.urls import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
