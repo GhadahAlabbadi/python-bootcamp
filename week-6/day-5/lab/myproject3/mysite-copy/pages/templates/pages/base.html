@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Site{% endblock %}</title>
+</head>
+<body>
+    <h1>My Site</h1>
+    <nav>
+        <a href="{% url 'pages:home' %}">Home</a>
+        <a href="{% url 'pages:about' %}">About</a>
+        <a href="{% url 'pages:contact' %}">Contact</a>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

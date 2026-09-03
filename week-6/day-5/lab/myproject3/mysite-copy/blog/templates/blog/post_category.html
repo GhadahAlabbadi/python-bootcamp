@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+{% block title %}Category: {{ category }}{% endblock %}
+{% block content %}
+<h2>Category: {{ category }}</h2>
+<ul>
+    {% for post in posts %}
+        <li><a href="{% url 'blog:post_detail' post.id %}">{{ post.title }}</a></li>
+    {% empty %}
+        <li>No posts in this category.</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'blog:post_list' %}">Back to all posts</a>
+{% endblock %}
