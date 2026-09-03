@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Payments{% endblock %}</title>
+</head>
+<body>
+    <h1>Payments</h1>
+    <nav>
+        <a href="{% url 'payments:checkout' %}">Checkout</a>
+        <a href="{% url 'payments:receipt' %}">Receipt</a>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

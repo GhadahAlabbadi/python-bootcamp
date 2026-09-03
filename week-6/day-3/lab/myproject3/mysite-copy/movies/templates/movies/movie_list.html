@@ -4,7 +4,7 @@
     <ul>
         {% for movie in movies %}
             <li>
-                <a href="{% url 'movie_detail' movie.id %}">{{ movie.title }}</a> 
+                <a href="{% url 'movies:movie_detail' movie.id %}">{{ movie.title }}</a>
                 ({{ movie.year }}) - Rating: {{ movie.rating }}
             </li>
         {% endfor %}

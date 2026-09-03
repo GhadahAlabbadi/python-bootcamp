@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Account{% endblock %}</title>
+</head>
+<body>
+    <h1>Account</h1>
+    <nav>
+        <a href="{% url 'users:login' %}">Login</a>
+        <a href="{% url 'users:profile' %}">Profile</a>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

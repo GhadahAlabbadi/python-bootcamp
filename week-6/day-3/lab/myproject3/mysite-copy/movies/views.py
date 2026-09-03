@@ -1,3 +1,4 @@
+from django.http import Http404
 from django.shortcuts import render
 
 movies = [
@@ -10,9 +11,7 @@ def movie_list(request):
     return render(request, 'movies/movie_list.html', {'movies': movies})
 
 def movie_detail(request, id):
-    movie = None
     for item in movies:
         if item['id'] == id:
-            movie = item
-            break
-    return render(request, 'movies/movie_detail.html', {'movie': movie})
+            return render(request, 'movies/movie_detail.html', {'movie': item})
+    raise Http404('Movie does not exist')

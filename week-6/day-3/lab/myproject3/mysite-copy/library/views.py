@@ -1,3 +1,4 @@
+from django.http import Http404
 from django.shortcuts import render
 
 books = [
@@ -20,4 +21,7 @@ def book_list(request):
     return render(request, 'library/book_list.html', context)
 
 def book_detail(request, id):
-    return render(request, 'library/book_detail.html', books[id-1])
+    for book in books:
+        if book['id'] == id:
+            return render(request, 'library/book_detail.html', book)
+    raise Http404('Book does not exist')

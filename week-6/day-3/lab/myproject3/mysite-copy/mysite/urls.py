@@ -15,9 +15,22 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.shortcuts import render
 from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('movies/', include('movies.urls')),
+    path('', include('pages.urls', namespace='pages')),
+    # path('library/', include('library.urls', namespace='library')),
+    # path('movies/', include('movies.urls', namespace='movies')),
+    path('blog/', include('blog.urls', namespace='blog')),
+    path('users/', include('users.urls', namespace='users')),
+    path('courses/', include('courses.urls', namespace='courses')),
+    path('payments/', include('payments.urls', namespace='payments')),
+    path('dashboard/', include('dashboard.urls', namespace='dashboard')),
 ]
+
+def custom_404(request, exception):
+    return render(request, '404.html', {'request_path': request.path}, status=404)
+
+handler404 = custom_404

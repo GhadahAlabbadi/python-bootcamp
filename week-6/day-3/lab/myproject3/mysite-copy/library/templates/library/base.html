@@ -8,8 +8,8 @@
 <body>
     <h1>My Library</h1>
     <nav>
-        <a href="{% url 'book_list' %}">Home</a>
-        <a href="{% url 'book_list' %}">Books</a>
+        <a href="{% url 'library:book_list' %}">Home</a>
+        <a href="{% url 'library:book_list' %}">Books</a>
     </nav>
     {% block content %}
     {% endblock %}
