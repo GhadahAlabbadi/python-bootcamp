@@ -26,6 +26,9 @@ Throughout this bootcamp, I aim to:
 - Use Flexbox and CSS Grid for modern layouts.
 - Apply transitions and animations to web interfaces.
 - Build web applications using Django.
+- Understand Django's MVT architecture.
+- Build modular URL routing systems.
+- Work with Django templates and dynamic URLs.
 - Work with databases using Django ORM.
 - Implement user authentication and authorization.
 - Complete hands-on labs and practical projects.
@@ -75,6 +78,14 @@ Throughout this bootcamp, I aim to:
 - [x] Day 4 – Responsive Design with Flexbox, Grid, and Media Queries
 - [x] Day 5 – CSS Transitions, Transforms, Animations, and UI Libraries
 
+### ✅ Week 6 — Completed
+
+- [x] Day 1 – Django Fundamentals, Project Setup, Apps, Views, and URL Routing
+- [x] Day 2 – Django MVT Architecture, Request Flow, Models, Views, and Templates
+- [x] Day 3 – Context, Middleware, Template Inheritance, and Modular URL Routing
+- [x] Day 4 – No Class
+- [x] Day 5 – Dynamic URLs, Path Converters, Reverse Resolution, Namespaces, and Routing Architecture
+
 > This repository will continue to be updated throughout the bootcamp.
 
 ---
@@ -114,11 +125,17 @@ Python-Bootcamp/
 │   ├── day-4/
 │   └── day-5/
 │
-└── week-5/
+├── week-5/
+│   ├── day-1/
+│   ├── day-2/
+│   ├── day-3/
+│   ├── day-4/
+│   └── day-5/
+│
+└── week-6/
     ├── day-1/
     ├── day-2/
     ├── day-3/
-    ├── day-4/
     └── day-5/
 ```
 
@@ -259,12 +276,82 @@ The project is maintained in a separate private repository.
 - Transforms
 - Keyframe Animations
 
+### Django Fundamentals
+
+- Django Framework
+- Django Project Setup
+- Virtual Environments for Django
+- `django-admin`
+- `manage.py`
+- Django Project Structure
+- `settings.py`
+- Django Projects and Apps
+- `INSTALLED_APPS`
+- Django Views
+- `HttpRequest`
+- `HttpResponse`
+- Development Server
+- Django Request-Response Flow
+
+### Django MVT Architecture
+
+- Model-View-Template Architecture
+- MVC vs MVT
+- Model Layer
+- View Layer
+- Template Layer
+- Context
+- `render()`
+- Template Variables
+- Template Tags
+- Template Loops
+- Template Inheritance
+- Base and Child Templates
+- Middleware
+- WSGI and ASGI
+- URL Resolver
+
+### Django URL Routing
+
+- URLconf
+- `urlpatterns`
+- `path()`
+- `include()`
+- Project-Level URLs
+- App-Level URLs
+- Modular Routing
+- URL Matching Order
+- First Match Wins
+- Simple Paths
+- Dynamic Paths
+- Path Parameters
+- View Arguments
+- Built-in Path Converters
+- `<int:x>`
+- `<str:x>`
+- `<slug:x>`
+- `<uuid:x>`
+- `<path:x>`
+- Named URLs
+- Reverse Resolution
+- `reverse()`
+- `{% url %}`
+- URL Namespaces
+- `app_name`
+- Dynamic Routes
+- Routing Debugging
+- `resolve()`
+- Custom 404 Pages
+- Routing Anti-Patterns
+- Scalable URL Architecture
+
 ### Upcoming Topics
 
-- Django
-- Django Models
+- Django Models in Depth
 - Django ORM
 - Databases
+- Migrations
+- Forms
 - Authentication and Authorization
 - Full Web Application Development
 - Capstone Project
