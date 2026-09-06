@@ -5,4 +5,5 @@ class DashboardHomeView(TemplateView):
     template_name = 'dashboard/home.html'
 
 def reports(request):
+    print(request)
     return render(request, 'dashboard/reports.html')
