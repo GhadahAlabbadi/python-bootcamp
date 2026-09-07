@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Projects{% endblock %}
+{% block content %}
+<h2>Projects</h2>
+
+<p class="filters">
+    Filter:
+    <a href="{% url 'pages:projects' %}">All</a> |
+    <a href="{% url 'pages:projects' %}?category=web">Web</a> |
+    <a href="{% url 'pages:projects' %}?category=tool">Tool</a>
+</p>
+
+{% if projects %}
+    <div class="project-list">
+        {% for project in projects %}
+            {% include 'pages/includes/card.html' with project=project %}
+        {% endfor %}
+    </div> 
+{% else %}
+    <p class="empty-state">
+        No projects found{% if category %} in category "{{ category }}"{% endif %}.
+    </p>
+{% endif %}
+{% endblock %}

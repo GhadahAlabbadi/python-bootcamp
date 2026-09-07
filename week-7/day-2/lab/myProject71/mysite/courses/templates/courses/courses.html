@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Courses{% endblock %}
+{% block content %}
+<h2>All Courses</h2>
+
+<p class="filters">
+    Filter by level:
+    <a href="{% url 'courses:list' %}">All</a> |
+    <a href="{% url 'courses:list' %}?level=beginner">Beginner</a> |
+    <a href="{% url 'courses:list' %}?level=intermediate">Intermediate</a> |
+    <a href="{% url 'courses:list' %}?level=advanced">Advanced</a>
+</p>
+
+<div class="course-list">
+    {% for course in courses %}
+        {% include 'courses/includes/course_card.html' with course=course %}
+    {% empty %}
+        <p class="empty-state">No courses found{% if level %} for level "{{ level }}"{% endif %}.</p>
+    {% endfor %}
+</div>
+{% endblock %}
