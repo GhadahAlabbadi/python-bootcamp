@@ -1,0 +1,13 @@
+{% load static %}
+<div class="card course-card">
+    <img src="{% static course.image %}" alt="{{ course.name }}">
+    <h3>{{ course.name|title }}</h3>
+    <p class="level">{{ course.level }}</p>
+    <p>{{ course.description|striptags }}</p>
+    {% if course.students == 0 %}
+        <p class="empty-state">No students enrolled yet.</p>
+    {% else %}
+        <p>{{ course.students }} students enrolled</p>
+    {% endif %}
+    <a href="{% url 'courses:detail' course.slug %}">View details</a>
+</div>

@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block extra_head %}
+    {% endblock %}
+    <title>{% block title %}My Site{% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'pages:home' %}">Home</a>
+        <a href="{% url 'pages:about' %}">About</a>
+        <a href="{% url 'pages:projects' %}">Projects</a>
+        <a href="{% url 'courses:home' %}">Courses</a>
+        <a href="{% url 'posts:feed' %}">Feed</a>
+    </nav>
+
+    <main class="content">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 My Django Site</p>
+    </footer>
+</body>
+</html>
