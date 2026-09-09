@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #222;
+    background: #fafafa;
+}
+
+.navbar {
+    background: #2d3142;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navbar-links a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 24px;
+    min-height: 60vh;
+}
+
+.footer {
+    background: #2d3142;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+}
+
+.filters a {
+    color: #2d3142;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 220px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.badge {
+    display: inline-block;
+    background: #ef8354;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+.empty-state {
+    color: #888;
+    font-style: italic;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.course-card .level {
+    font-weight: bold;
+    color: #2d3142;
+}
+ 
+.detail-image {
+    max-width: 400px;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.description {
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+.search-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-form input,
+.search-form select,
+.search-form button {
+    padding: 6px 10px;
+}
+
+.catalog-list {
+    list-style: none;
+    padding: 0;
+}
+
+.catalog-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    max-width: 500px;
+}
+
+.catalog-item .meta {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.tabs {
+    display: flex;
+    gap: 4px;
+    margin: 16px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabs a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #2d3142;
+    border-bottom: 2px solid transparent;
+}
+
+.tabs a.active {
+    border-bottom-color: #2d3142;
+    font-weight: bold;
+}
+
+.tab-content {
+    padding: 8px 0;
+}
