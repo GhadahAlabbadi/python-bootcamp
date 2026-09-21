@@ -1,0 +1,16 @@
+<div class="post-card">
+    <p class="post-username">@{{ post.username }}</p>
+    <img src="{{ post.image_url }}" alt="{{ post.username }}'s post" class="post-image">
+    {% if post.description %}
+        <p class="post-description">{{ post.description }}</p>
+    {% endif %}
+    <form method="post" action="{% url 'posts:like' post.id %}" class="like-form">
+        {% csrf_token %}
+        <button type="submit" class="like-button">&hearts; Like</button>
+    </form>
+    {% if post.likes == 0 %}
+        <p class="likes-count">Be the first to like this.</p>
+    {% else %}
+        <p class="likes-count">{{ post.likes }} like{{ post.likes|pluralize }}</p>
+    {% endif %}
+</div>
