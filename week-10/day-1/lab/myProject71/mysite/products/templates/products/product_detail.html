@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}{{ product.name }}{% endblock %}
+{% block content %}
+<p><a href="{% url 'products:list' %}">&larr; Back to products</a></p>
+
+<h2>{{ product.name }}</h2>
+<p class="meta">{{ product.category }} &middot; ${{ product.price }} &middot; {{ product.rating }}&#9733;</p>
+
+<div class="tabs">
+    <a href="?tab=details" class="{% if tab == 'details' %}active{% endif %}">Details</a>
+    <a href="?tab=reviews" class="{% if tab == 'reviews' %}active{% endif %}">Reviews</a>
+    <a href="?tab=shipping" class="{% if tab == 'shipping' %}active{% endif %}">Shipping</a>
+</div>
+
+<div class="tab-content">
+    {% if tab == 'details' %} 
+        <p>Category: {{ product.category }}</p>
+        <p>Price: ${{ product.price }}</p>
+        <p>Rating: {{ product.rating }}&#9733;</p>
+        <p class="description">{{ product.description }}</p>
+    {% elif tab == 'reviews' %}
+        <p>Average rating: {{ product.rating }}&#9733; from customer feedback.</p>
+        <p class="empty-state">No individual reviews yet — be the first to leave one.</p>
+    {% elif tab == 'shipping' %}
+        <p>Ships within 2-3 business days.</p>
+        <p>Free returns within 30 days of delivery.</p>
+    {% endif %}
+</div>
+{% endblock %}
