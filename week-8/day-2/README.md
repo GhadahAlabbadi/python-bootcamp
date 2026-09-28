@@ -6,8 +6,6 @@ Today focused on managing **user state** and handling **validated form input** i
 
 The lesson covered how **cookies and sessions** preserve information between HTTP requests, followed by Django Forms and ModelForms for validating and processing user-submitted data safely.
 
-**Date:** September 14
-
 ---
 
 ## Topics Covered
