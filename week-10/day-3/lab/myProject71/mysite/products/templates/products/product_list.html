@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %}Products{% endblock %}
+{% block content %}
+<h2>Product Explorer</h2>
+
+<form method="get" class="search-form">
+    <input type="text" name="q" placeholder="Search products..." value="{{ query }}">
+
+    <select name="category">
+        <option value="">All categories</option>
+        <option value="electronics" {% if category == 'electronics' %}selected{% endif %}>Electronics</option>
+        <option value="sportswear" {% if category == 'sportswear' %}selected{% endif %}>Sportswear</option>
+        <option value="home" {% if category == 'home' %}selected{% endif %}>Home</option>
+    </select>
+
+    <input type="number" step="1.00" name="min_price" placeholder="Min price" value="{{ min_price }}">
+
+    <select name="sort">
+        <option value="name" {% if sort == 'name' %}selected{% endif %}>Sort: Name</option>
+        <option value="price" {% if sort == 'price' %}selected{% endif %}>Sort: Price</option>
+        <option value="rating" {% if sort == 'rating' %}selected{% endif %}>Sort: Rating</option>
+    </select>
+
+    <button type="submit">Search</button>
+</form>
+
+{% if products %}
+    <ul class="catalog-list">
+        {% for product in products %}
+            <li class="catalog-item">
+                <a href="{% url 'products:detail' product.id %}">{{ product.name }}</a>
+                <span class="meta">{{ product.category }} &middot; ${{ product.price }} &middot; {{ product.rating }}&#9733;</span>
+            </li> 
+        {% endfor %}
+    </ul>
+{% else %}
+    <p class="empty-state">No products match your search.</p>
+{% endif %}
+
+<div class="pagination">
+    {% if has_previous %}
+        <a href="?q={{ query }}&category={{ category }}&min_price={{ min_price }}&sort={{ sort }}&page={{ page|add:'-1' }}">&laquo; Previous</a>
+    {% endif %}
+    <span>Page {{ page }} of {{ total_pages }}</span>
+    {% if has_next %}
+        <a href="?q={{ query }}&category={{ category }}&min_price={{ min_price }}&sort={{ sort }}&page={{ page|add:'1' }}">Next &raquo;</a>
+    {% endif %}
+</div>
+{% endblock %}

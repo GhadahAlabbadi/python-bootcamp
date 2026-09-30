@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}{{ course.name }}{% endblock %}
+{% block content %}
+<p><a href="{% url 'courses:list' %}">&larr; Back to catalog</a></p>
+
+<h2>{{ course.name }}</h2>
+<p class="meta">{{ course.category }} &middot; {{ course.difficulty }}</p>
+
+<div class="tabs">
+    <a href="?tab=details" class="{% if tab == 'details' %}active{% endif %}">Details</a>
+    <a href="?tab=syllabus" class="{% if tab == 'syllabus' %}active{% endif %}">Syllabus</a>
+    <a href="?tab=instructor" class="{% if tab == 'instructor' %}active{% endif %}">Instructor</a>
+</div>
+
+<div class="tab-content">
+    {% if tab == 'details' %}
+        <p>Category: {{ course.category }}</p>
+        <p>Difficulty: {{ course.difficulty }}</p>
+    {% elif tab == 'syllabus' %}
+        <p>{{ course.syllabus }}</p>
+    {% elif tab == 'instructor' %}
+        <p>Taught by {{ course.instructor }}</p>
+    {% endif %}
+</div>
+{% endblock %}

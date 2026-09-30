@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; color: #222; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 1.5rem; }
+        th, td { border: 1px solid #ccc; padding: 0.5rem 0.75rem; text-align: left; }
+        th { background: #f4f4f4; }
+        .inactive { color: #999; }
+        .messages { list-style: none; padding: 0; }
+        .messages li { padding: 0.5rem 0.75rem; margin-bottom: 0.5rem; border-radius: 4px; }
+        .messages .success { background: #e6f4ea; color: #1e7e34; }
+        .messages .error { background: #fbe9e7; color: #b00020; }
+        form.inline { display: inline-block; margin-right: 1rem; }
+    </style>
+</head>
+<body>
+    <h1>Product Dashboard</h1>
+
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    <table>
+        <thead>
+            <tr><th>ID</th><th>Name</th><th>Code</th><th>Category</th><th>Price</th><th>Quantity</th><th>Active</th></tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr class="{% if not product.is_active %}inactive{% endif %}">
+                <td>{{ product.pk }}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.code }}</td>
+                <td>{{ product.get_category_display }}</td>
+                <td>{{ product.price }}</td>
+                <td>{{ product.quantity }}</td>
+                <td>{{ product.is_active }}</td>
+            </tr>
+            {% empty %}
+            <tr><td colspan="7">No products yet.</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <form class="inline" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="action" value="deactivate_category">
+        <label for="category">Deactivate category:</label>
+        <select name="category" id="category">
+            {% for value, label in categories %}
+            <option value="{{ value }}">{{ label }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Deactivate</button>
+    </form>
+
+    <form class="inline" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="action" value="cleanup">
+        <button type="submit">Delete inactive, zero-stock products</button>
+    </form>
+</body>
+</html>
