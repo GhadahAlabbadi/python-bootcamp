@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}Courses{% endblock %}
+{% block content %}
+<h2>Course Catalog</h2>
+
+<form method="get" class="search-form">
+    <input type="text" name="q" placeholder="Search courses..." value="{{ query }}">
+
+    <select name="category">
+        <option value="">All categories</option>
+        <option value="programming" {% if category == 'programming' %}selected{% endif %}>Programming</option>
+        <option value="web" {% if category == 'web' %}selected{% endif %}>Web</option>
+        <option value="data-science" {% if category == 'data-science' %}selected{% endif %}>Data Science</option>
+    </select>
+
+    <select name="difficulty">
+        <option value="">All difficulties</option>
+        <option value="beginner" {% if difficulty == 'beginner' %}selected{% endif %}>Beginner</option>
+        <option value="intermediate" {% if difficulty == 'intermediate' %}selected{% endif %}>Intermediate</option>
+        <option value="advanced" {% if difficulty == 'advanced' %}selected{% endif %}>Advanced</option>
+    </select>
+
+    <button type="submit">Search</button>
+</form>
+
+{% if courses %}
+    <ul class="catalog-list">
+        {% for course in courses %}
+            <li class="catalog-item">
+                <a href="{% url 'courses:detail' course.id %}">{{ course.name }}</a>
+                <span class="meta">{{ course.category }} &middot; {{ course.difficulty }}</span>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p class="empty-state">No courses match your search.</p>
+{% endif %}
+
+<div class="pagination">
+    {% if has_previous %}
+        <a href="?q={{ query }}&category={{ category }}&difficulty={{ difficulty }}&page={{ page|add:'-1' }}">&laquo; Previous</a>
+    {% endif %}
+    <span>Page {{ page }} of {{ total_pages }}</span>
+    {% if has_next %}
+        <a href="?q={{ query }}&category={{ category }}&difficulty={{ difficulty }}&page={{ page|add:'1' }}">Next &raquo;</a>
+    {% endif %}
+</div>
+{% endblock %}
